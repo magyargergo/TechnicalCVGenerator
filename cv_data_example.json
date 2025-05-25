@@ -1,0 +1,106 @@
+{
+  "candidate": {
+    "name": "John Doe",
+    "contact": [
+      {"icon": "\uf0e0", "text": "Email: john.doe@example.com"},
+      {"icon": "\uf041", "text": "London, United Kingdom"},
+      {"icon": "\uf095", "text": "Phone: +44 123 456 7890"},
+      {"icon": "\uf08c", "text": "LinkedIn: linkedin.com/in/johndoe"},
+      {"icon": "\uf09b", "text": "GitHub: github.com/johndoe"}
+    ]
+  },
+  "profile": "Senior Software Engineer with 7+ years of experience in full-stack development. Passionate about building scalable applications and leading technical teams. Expertise in modern web technologies and cloud architecture.",
+  "technical_skills": {
+    "Frontend Development": ["React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3"],
+    "Backend Development": ["Python", "Node.js", "Java", "RESTful APIs", "GraphQL"],
+    "Databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
+    "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"],
+    "Tools & Practices": ["Git", "Agile/Scrum", "TDD", "Code Review", "JIRA"]
+  },
+  "education": {
+    "items": [
+      {
+        "institution": "University of Example",
+        "degree": "BSc Computer Science",
+        "duration": "2010 - 2014",
+        "details": "First Class Honours. Dissertation on Machine Learning applications."
+      }
+    ]
+  },
+  "experience": {
+    "companies": [
+      {
+        "name": "Tech Corp Ltd",
+        "totalDuration": "3 years",
+        "roles": [
+          {
+            "title": "Senior Software Engineer",
+            "duration": "2021 - Present",
+            "responsibilities": [
+              "Led development team of 5 engineers in building microservices architecture",
+              "Implemented CI/CD pipeline reducing deployment time by 60%",
+              "Mentored junior developers and conducted code reviews",
+              "Architected and developed RESTful APIs serving 1M+ daily requests"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "StartUp Inc",
+        "totalDuration": "2 years",
+        "roles": [
+          {
+            "title": "Full Stack Developer",
+            "duration": "2019 - 2021",
+            "responsibilities": [
+              "Developed React-based frontend for e-commerce platform",
+              "Built Node.js backend services handling payment processing",
+              "Improved application performance by 40% through optimization",
+              "Collaborated with UX team to implement responsive designs"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Digital Agency",
+        "totalDuration": "2 years",
+        "roles": [
+          {
+            "title": "Junior Developer",
+            "duration": "2017 - 2019",
+            "responsibilities": [
+              "Developed and maintained client websites using modern frameworks",
+              "Participated in agile development process and daily standups",
+              "Wrote unit tests achieving 80% code coverage",
+              "Assisted in database design and optimization"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Project Management System",
+      "description": "Designed and implemented a web-based project management tool using React and Node.js. Features included real-time collaboration, task tracking, and reporting dashboards. Successfully deployed to production serving 500+ users."
+    },
+    {
+      "title": "E-commerce Platform",
+      "description": "Built a scalable e-commerce solution with microservices architecture. Implemented features including product catalog, shopping cart, payment integration, and order management. Achieved 99.9% uptime in production."
+    },
+    {
+      "title": "Open Source Contribution",
+      "description": "Active contributor to popular open-source projects. Submitted PRs for bug fixes and feature enhancements. Maintained personal npm packages with 10k+ weekly downloads."
+    }
+  ],
+  "additional_info": [
+    "Fluent in English and Spanish",
+    "Available for remote work and occasional travel",
+    "Active speaker at local tech meetups",
+    "Certified AWS Solutions Architect"
+  ],
+  "theme": {
+    "primary_color": "#003087",
+    "accent_color": "#BEDCF9"
+  }
+} 

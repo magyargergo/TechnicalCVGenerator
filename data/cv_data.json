@@ -1,0 +1,191 @@
+{
+  "candidate": {
+    "name": "Gergo Magyar",
+    "contact": [
+      {"icon": "\uf0e0", "text": "Email: gergomagyar@icloud.com"},
+      {"icon": "\uf041", "text": "Woking, United Kingdom"},
+      {"icon": "\uf095", "text": "Phone: +44 795 122 5614"},
+      {"icon": "\uf08c", "text": "LinkedIn: https://www.linkedin.com/in/gergomagyar"},
+      {"icon": "\uf09b", "text": "GitHub: https://github.com/magyargergo"},
+      {"icon": "\uf0ac", "text": "Website: https://mycv.gergomagyar.com"}
+    ]
+  },
+  "profile": "Senior software engineer with more than seven years' hands-on experience designing, building and running web platforms. I pair clean TypeScript, PHP and Python with pragmatic tooling such as Docker, and I'm happiest when the uptime graph is flat and deployment logs are uneventful.\n\nAt Freelancer.com I look after reliability. The live dashboards I introduced trimmed roughly a third from our incident-response time, and the Docker / Jenkins pipeline I set up turned multi-hour releases into routine ten-minute jobs.\n\nDay-to-day I prune legacy code, improve developer experience by writing scripts that spare the team from repetitive work. The role is a permanent, in-house position at Freelancer.com's UK branch – I'm not a freelancer despite the name.",
+  "technical_skills": {
+    "Frontend Development": [
+      "React & Angular frameworks",
+      "JavaScript/TypeScript",
+      "HTML5/CSS3",
+      "SPA architecture",
+      "Frontend performance optimisation"
+    ],
+    "Backend Development": [
+      "PHP backend services",
+      "RESTful API design",
+      "Relational databases",
+      "Object-oriented programming",
+      "Microservices architecture"
+    ],
+    "Development Practices": [
+      "Agile/Scrum methodologies",
+      "Git version control",
+      "CI/CD pipelines",
+      "Cross-functional collaboration",
+      "Code quality & testing"
+    ]
+  },
+  "education": {
+    "items": [
+      {
+        "institution": "Corvinus University of Budapest",
+        "degree": "Master's Degree, Economist in Accountancy",
+        "duration": "2016 - 2021"
+      },
+      {
+        "institution": "University of Szeged",
+        "degree": "Bachelor's Degree, Computer Science",
+        "duration": "2012 - 2016"
+      },
+      {
+        "institution": "József Attila Secondary Grammar School",
+        "degree": "High School Diploma, Mathematics and Informatics Faculty",
+        "duration": "2008 - 2012"
+      }
+    ]
+  },
+  "experience": {
+    "companies": [
+      {
+        "name": "Freelancer.com — In-house, Full-time (Freelancer Outsourcing UK Ltd)",
+        "totalDuration": "5 years 10 months",
+        "startDate": "Aug-2019",
+        "isCurrent": true,
+        "roles": [
+          {
+            "title": "Senior Software Engineer",
+            "responsibilities": [
+              "Owned platform stability and on-call process; new real-time dashboards and alert rules cut critical incidents by a quarter.",
+              "Re-built key features in Angular and PHP, shaving seconds off page loads and boosting customer satisfaction scores.",
+              "Worked side-by-side with product and data teams to turn goals into deliverable technical tasks, helping projects land on schedule.",
+              "Replaced manual release steps with Docker and Jenkins automation, reducing deployment time by nearly a third."
+            ]
+          },
+          {
+            "title": "Full Stack Software Engineer",
+            "responsibilities": [
+              "Built and enhanced full-stack features across Angular, PHP and Python, lifting throughput by around fifteen per cent.",
+              "Partnered with the data-science group to expose new analytics that informed product decisions.",
+              "Refactored legacy modules, cutting the team's technical-debt backlog by a fifth."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fornax Kft. (Hungary)",
+        "totalDuration": "7 months",
+        "startDate": "Jan-2019",
+        "endDate": "Jul-2019",
+        "roles": [
+          {
+            "title": "Full Stack Developer",
+            "responsibilities": [
+              "Implemented Keycloak SSO for backend security and OAuth2 for frontend authentication, enhancing application security",
+              "Developed RESTful web services using Spring Boot and configured continuous deployment, accelerating release cycles",
+              "Maintained and optimised graph and relational databases (AgensGraph and PostgreSQL), improving data retrieval efficiency by 20%",
+              "Standardised frontend development processes and mentored junior developers, improving team productivity"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Minero IT Hungary Kft.",
+        "totalDuration": "2 years 6 months",
+        "startDate": "Aug-2016",
+        "endDate": "Jan-2019",
+        "roles": [
+          {
+            "title": "Java Developer",
+            "responsibilities": [
+              "Collaborated with international teams to design and extend a specialised Java compiler, enhancing language features",
+              "Implemented a custom Integrated Development Environment (IDE) with advanced refactoring capabilities, improving developer efficiency"
+            ]
+          },
+          {
+            "title": "Junior Java Developer",
+            "responsibilities": [
+              "Served as a liaison with German and Slovenian partner companies, facilitating effective communication and collaboration",
+              "Assisted in designing and extending a Java compiler in partnership with international teams",
+              "Supported the implementation of a specialised IDE featuring refactoring capabilities"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "FrontEndART Software Ltd.",
+        "totalDuration": "2 years 2 months",
+        "startDate": "Jun-2014",
+        "endDate": "Jul-2016",
+        "roles": [
+          {
+            "title": "Junior Software Developer",
+            "responsibilities": [
+              "Transformed FxCop analysis results into user-friendly reports, improving usability and developer adoption",
+              "Contributed to the development of a SonarQube plugin for visualising code analysis results, enhancing code quality monitoring"
+            ]
+          },
+          {
+            "title": "Graduate Software Developer",
+            "responsibilities": [
+              "Developed a static code analysis tool in C# using the Roslyn compiler infrastructure, aiding in code quality improvement",
+              "Calculated code metrics on a language-independent model in C++, contributing to performance optimisation"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "additional_info": [
+    "Available for hybrid working",
+    "7+ years professional experience",
+    "Mentorship experience",
+    "English (Fluent), Hungarian (Native)",
+    "Excellent problem-solving skills"
+  ],
+  "projects": [
+    {
+      "title": "Collaboration Team Monitoring Dashboards",
+      "description": "Developed comprehensive monitoring dashboards for enterprise collaboration products, including messaging, groups and project updates. Provided real-time analytics and performance tracking, enabling proactive issue resolution and improved service reliability."
+    },
+    {
+      "title": "PHP Infrastructure Modernisation",
+      "description": "Containerised legacy PHP applications using Docker, resulting in consistent development environments, simplified deployment processes and enhanced scalability. Reduced environment setup time by 70% and eliminated 'works on my machine' issues."
+    },
+    {
+      "title": "Test Framework Enhancement",
+      "description": "Upgraded and expanded the functional testing framework, improving test coverage, execution speed and reliability. Implemented automated regression testing that reduced QA cycles by 30% while increasing fault detection."
+    },
+    {
+      "title": "Angular Frontend Migration",
+      "description": "Successfully led a major version upgrade of the Angular framework across multiple frontend applications. Implemented modern architectural patterns, improved build processes and enhanced performance, resulting in 25% faster load times."
+    }
+  ],
+  "references": "Professional references available upon request.",
+  "theme": {
+    "primary_color": "#003087",
+    "secondary_color": "#0070CC",
+    "background_color": "#F5F8FC",
+    "accent_color": "#BEDCF9"
+  },
+  "layout": {
+    "page_size": "A4",
+    "left_margin": 0.3,
+    "right_margin": 0.3,
+    "top_margin": 0.3,
+    "bottom_margin": 0.3,
+    "banner_height": 1.4,
+    "left_column_width_ratio": 0.3,
+    "section_spacing": 0.3,
+    "line_spacing": 11,
+    "paragraph_spacing": 0.12
+  }
+}
