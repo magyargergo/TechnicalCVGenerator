@@ -99,8 +99,14 @@ class CVGenerator:
         logger.debug(f"Calculated content density: {content_density:.2f}")
         theme = self._adjust_theme_for_content_density(content_density)
 
-        # Create output directory if it doesn't exist
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        # Create output directory if it doesn't exist. When output_path
+        # is just a filename without any directory component, os.path.dirname
+        # returns an empty string which would cause ``os.makedirs`` to raise
+        # ``FileNotFoundError``.  Guard against this by checking the directory
+        # portion before attempting to create it.
+        output_dir = os.path.dirname(os.path.abspath(output_path))
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
         
         # Get layout data from CVData (which includes defaults and user overrides from JSON)
         layout_data_dict = optimized_data.get_layout_data() 
