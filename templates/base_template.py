@@ -136,6 +136,19 @@ class BaseTemplate(ABC):
         # Reset current_y to top of content area on new page
         self.current_y = self.layout.page_size[1] - self.layout.top_margin
 
+        # After calling ``showPage`` ReportLab resets the graphics state which
+        # results in fonts and colors falling back to defaults on the new page.
+        # This caused inconsistent spacing and layout after page breaks.  Ensure
+        # the theme's default font and text color are re-applied so subsequent
+        # drawing commands use the expected settings.
+        if self.theme is not None:
+            self.canvas.setFont(self.theme.body_font, self.theme.body_font_size)
+            self.canvas.setFillColor(self.theme.get_color(self.theme.text_color))
+
+        # Save the restored graphics state so that any later ``restoreState``
+        # calls bring us back to this consistent baseline on each page.
+        self.canvas.saveState()
+
     def set_fill_color(self, color_str: str) -> None:
         """
         Set fill color from a hex string or color name.
