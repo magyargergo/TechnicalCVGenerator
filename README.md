@@ -219,6 +219,26 @@ TechnicalCVGenerator/
 └── README.md         # This file
 ```
 
+## Testing
+
+Automated tests validate that the PDF generator works correctly. Generated PDF
+files are converted to ASCII using `pdfminer.six` and compared against baseline
+output stored under `tests/expected`. If the ASCII output differs from the
+baseline a unified diff is shown. To run the tests install the dependencies and
+execute `pytest`:
+
+```bash
+pip install -r requirements.txt
+pip install pytest
+pytest
+```
+
+If you intentionally change the PDF output, regenerate the baseline with:
+
+```bash
+python -m tests.generate_baseline
+```
+
 ## Contributing
 
 Contributions are welcome! Some ideas for improvements:
