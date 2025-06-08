@@ -40,6 +40,6 @@ jobs:
     
     - name: Test CV generation
       run: |
-        python example_usage.py --data cv_data_example.json --output test_output.pdf --template two_column
-        python example_usage.py --data cv_data_example.json --output test_output_minimal.pdf --template minimal
-        python example_usage.py --data cv_data_example.json --output test_output_modern.pdf --template modern 
+        python example_usage.py --data data/cv_data.json --output test_output.pdf --template two_column --profile-picture data/profile_picture.jpg
+        python example_usage.py --data data/cv_data.json --output test_output_minimal.pdf --template minimal --profile-picture data/profile_picture.jpg
+        python example_usage.py --data data/cv_data.json --output test_output_modern.pdf --template modern --profile-picture data/profile_picture.jpg
