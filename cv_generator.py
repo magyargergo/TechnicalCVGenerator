@@ -104,7 +104,7 @@ class CVGenerator:
         # returns an empty string which would cause ``os.makedirs`` to raise
         # ``FileNotFoundError``.  Guard against this by checking the directory
         # portion before attempting to create it.
-        output_dir = os.path.dirname(os.path.abspath(output_path))
+        output_dir = os.path.dirname(output_path)
         if output_dir:
             os.makedirs(output_dir, exist_ok=True)
         
