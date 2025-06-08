@@ -5,14 +5,12 @@ This script provides a command-line interface to generate CVs using different te
 """
 
 import argparse
+import json
 import os
 import sys
-from pathlib import Path
+import tempfile
 
 from cv_generator import CVGenerator
-from cv_data import CVData
-from theme import Theme
-from layout import Layout
 
 
 def list_available_templates():
@@ -91,42 +89,41 @@ def main():
         print(f"Error: Profile picture '{args.profile_picture}' not found.")
         return 1
     
-    try:
-        # Load CV data
-        cv_data = CVData(args.data)
-        
-        # Create theme with potential overrides
-        theme = Theme()
+    # Apply theme overrides by creating a temporary data file if needed
+    data_file = args.data
+    temp_file = None
+
+    if args.primary_color or args.accent_color:
+        with open(args.data, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        data.setdefault("theme", {})
         if args.primary_color:
-            theme.primary_color = args.primary_color
+            data["theme"]["primary_color"] = args.primary_color
         if args.accent_color:
-            theme.accent_color = args.accent_color
-        
-        # Create layout
-        layout = Layout()
-        
-        # Create output directory if it doesn't exist
-        output_dir = os.path.dirname(args.output)
-        if output_dir:
-            os.makedirs(output_dir, exist_ok=True)
-        
-        # Initialize CV generator
-        generator = CVGenerator(cv_data, theme, layout)
-        
-        # Set profile picture if provided
-        if args.profile_picture:
-            generator.profile_picture_path = args.profile_picture
-        
-        # Generate CV
-        print(f"Generating CV using '{args.template}' template...")
-        generator.generate(args.output, template_name=args.template)
+            data["theme"]["accent_color"] = args.accent_color
+
+        fd, temp_file = tempfile.mkstemp(suffix=".json")
+        with os.fdopen(fd, "w", encoding="utf-8") as tmp:
+            json.dump(data, tmp, indent=2)
+        data_file = temp_file
+
+    try:
+        generator = CVGenerator()
+        generator.create_cv(
+            data_path=data_file,
+            output_path=args.output,
+            template_name=args.template,
+            profile_picture_path=args.profile_picture,
+        )
         print(f"CV successfully generated: {args.output}")
-        
         return 0
-        
     except Exception as e:
         print(f"Error generating CV: {str(e)}")
         return 1
+    finally:
+        if temp_file and os.path.exists(temp_file):
+            os.remove(temp_file)
 
 
 if __name__ == "__main__":
